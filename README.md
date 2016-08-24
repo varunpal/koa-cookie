@@ -30,3 +30,29 @@ app.use(async function (ctx, next) {
 });
 
 ```
+
+### Example with koa-router
+```javascript
+var app = require('koa')();
+var cookie = require('koa-cookie');
+var router = require('koa-router')();
+
+router.use(cookie());
+ 
+router.get('/', async (context) => {
+  const cookies = context.cookie;
+  /*
+    if cookies sent are of the form: 'name=abc; age=20; token = xyz;'
+    Then ctx.cookie is an object of the form:
+    {
+      name: 'abc',
+      age: '20',
+      token: 'xyz'
+    }
+  */
+});
+ 
+app
+  .use(router.routes())
+  .use(router.allowedMethods());
+```
