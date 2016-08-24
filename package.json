@@ -1,0 +1,27 @@
+{
+  "name": "koa-cookie",
+  "version": "1.0.0",
+  "description": "Koa cookie parser middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunpal/koa-cookie.git"
+  },
+  "keywords": [
+    "koa",
+    "cookie",
+    "middleware",
+    "parser",
+    "cookie-parser",
+    "koa-router"
+  ],
+  "author": "Varun Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varunpal/koa-cookie/issues"
+  },
+  "homepage": "https://github.com/varunpal/koa-cookie#readme"
+}
