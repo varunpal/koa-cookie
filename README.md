@@ -37,7 +37,7 @@ var app = require('koa')();
 var cookie = require('koa-cookie');
 var router = require('koa-router')();
 
-router.use(cookie());
+router.use(cookie.default());
  
 router.get('/', async (context) => {
   const cookies = context.cookie;
